@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+.mainPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 10px;
+  height: 90vh;
+  background-color: darkcyan;
+  border-radius: 10px;
+}
+.chartContainer {
+  width: 70%;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: beige;
+}
+.formContainer {
+  width: 30%;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: beige;
+  direction: rtl;
+}
+.button {
+  margin-top: 20px;
+  margin-right: 70px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: darkcyan;
+  color: white;
+  font-size: 20px;
+}
+.inputs {
+  margin-right: 40px;
+}

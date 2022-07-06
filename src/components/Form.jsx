@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Button from "./Button";
 import Input from "./Input";
 import listData from "../redux/listData/listData";
+import { submitData } from "../redux/listData/listData";
 
 const Form = () => {
   const data = useSelector((state) => state.listData.listData);
@@ -18,9 +19,8 @@ const Form = () => {
   };
 
   const submitHandler = () => {
-    dispatch(listData(formData));
+    dispatch(submitData(formData));
   };
-  console.log(data);
   return (
     <div className="formContainer">
       <div className="inputs">
@@ -37,7 +37,10 @@ const Form = () => {
           changeHandler={changeHandler}
         />
       </div>
-      <Button children={"ثبت"} className={"button"} onClick={submitHandler} />
+      <button className={"button"} onClick={submitHandler}>
+        ثبت
+      </button>
+      {/* <Button children={"ثبت"} className={"button"} onClick={submitHandler} /> */}
     </div>
   );
 };

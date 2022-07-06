@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const ChartContainer = () => {
   const data = useSelector((state) => state.listData.listData);
-
+  console.log(data);
   return (
     <div className="chartContainer">
       {data.map((item) => (
